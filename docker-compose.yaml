@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  dev:
+    image: ruby:2.6.3
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ruby2.6-bundle-cache:/usr/local/bundle
+volumes:
+  ruby2.6-bundle-cache:
+    external: true

@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+APP_ENV=$1
+
+echo "deploy to $APP_ENV"
